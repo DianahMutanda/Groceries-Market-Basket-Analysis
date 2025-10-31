@@ -8,10 +8,10 @@ from mlxtend.frequent_patterns import apriori, association_rules
 df = pd.read_csv('groceries.csv')
 
 # Step 2: Data Cleaning
-# Drop columns with less than 10 non-null entries
+# Drop all columns with less than 10 non-null entries
 df = df.dropna(axis=1, thresh=10)
 
-# Drop rows with any missing values
+# Drop all rows with any missing values
 df = df.dropna(axis=0)
 
 # Step 3: Transform the dataset into a list of transactions
