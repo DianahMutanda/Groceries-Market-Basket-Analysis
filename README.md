@@ -30,7 +30,7 @@ for transaction in transactions:
     df_binary = df_binary.append(binary_row, ignore_index=True)
 
 # Step 5: Apriori Algorithm - Experiment 1 with min_support 0.005
-# Apply the Apriori algorithm to find frequent itemsets
+# Apply the Apriori algorithm to find the frequent itemsets
 frequent_itemsets_1 = apriori(df_binary, min_support=0.005, use_colnames=True)
 
 # Generate association rules for Experiment 1 with min confidence 0.6
